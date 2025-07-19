@@ -1,5 +1,5 @@
 # workload-tool
-# Dashboad
+
 ![Screenshot](assets/screenshot.jpg)
 
 
