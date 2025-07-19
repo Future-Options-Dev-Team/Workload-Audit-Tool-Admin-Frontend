@@ -1,7 +1,6 @@
 # workload-tool
 # Dashboad
-![screenshot](assets/screenshot.png)
-![Screenshot](https://raw.githubusercontent.com/Future-Options-Dev-Team/Workload-Audit-Tool-Admin-Frontend/main/assets/screenshot.png)
+![Screenshot](assets/screenshot.jpg)
 
 
 ## Build Setup
