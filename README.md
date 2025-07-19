@@ -1,6 +1,6 @@
 # workload-tool
 # Dashboad
-![Screenshot](assets/screenshot.png)
+![screenshot](assets/screenshot.png)
 
 ## Build Setup
 
