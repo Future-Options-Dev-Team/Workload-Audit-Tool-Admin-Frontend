@@ -1,0 +1,67 @@
+.text-blue {
+  color: #0D47A1;
+}
+
+.text-primary {
+  color: #E46805;
+}
+
+button, input[type="button"]{
+  &:focus, &:active{
+    @apply outline-none;
+  }
+}
+
+.button {
+  @apply px-4 py-2 text-center rounded font-semibold mx-2;
+
+  &:hover {
+    @apply shadow;
+  }
+  &:last-of-type{
+    @apply mr-0;
+  }
+  &:first-of-type{
+    @apply ml-0;
+  }
+
+  &.button-md{
+    @apply text-sm py-2 px-3;
+  }
+  &.button-lg{
+    @apply text-sm py-4 px-4;
+  }
+  &.button-sm{
+    @apply text-sm py-1 px-2;
+  }
+  &.button-outline{
+    @apply border;
+  }
+  &.button-primary{
+    @apply bg-blue-600 text-white;
+
+    &:hover {
+      @apply bg-blue-500;
+    }
+  }
+  &.button-outline-primary{
+    @apply bg-transparent border-green-600 border text-green-600;
+  }
+  &.button-outline-error{
+    @apply bg-white border-gray-400 border text-red-600;
+  }
+  &.button-link{
+    color: #0D47A1;
+    @apply font-bold px-0;
+  }
+}
+
+.link{
+  color: #0D47A1;
+}
+
+.button:disabled,
+.button.disabled,
+.button[disabled]{
+  @apply text-gray-300 border-gray-300 opacity-50 cursor-not-allowed;
+}

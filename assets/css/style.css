@@ -1,0 +1,52 @@
+.heading-section {
+  margin-top: 16px;
+}
+
+.text-blue {
+  color: #0D47A1;
+}
+
+.text-primary {
+  color: #f98d06;
+}
+
+.bg-primary {
+  background-color: #f98d06;
+}
+
+.filters-section {
+  @apply pb-4;
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #e5e7eb;
+}

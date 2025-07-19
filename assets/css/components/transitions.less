@@ -1,0 +1,41 @@
+.slideIn{
+  animation: slideIn 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.slideInLeft{
+  animation: slideInLeft 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes slideInLeft {
+  0%{
+    transform: translateX(15px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.spinning {
+  @apply inline-block;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

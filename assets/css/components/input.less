@@ -1,0 +1,84 @@
+.input-horizontal-group{
+  @apply flex items-center flex-wrap;
+
+  .input-group{
+    @apply pr-6;
+    margin-top: 18px !important;
+    &:last-child {
+      @apply pr-0 !important;
+    }
+  }
+}
+
+.input-group {
+  @apply mt-4;
+
+  &:first-child {
+    @apply mt-1;
+  }
+
+  label {
+    @apply text-gray-600;
+  }
+}
+
+.input-with-icon {
+  @apply relative mt-2;
+
+  & .input {
+    @apply pl-8 mt-0;
+  }
+
+  .fe {
+  @apply absolute w-4 ml-2 text-gray-700 top-0 h-full flex items-center z-50;
+  }
+}
+
+.input {
+  @apply w-full px-3 py-2 rounded mt-1 bg-white shadow-sm overflow-hidden;
+
+  &.is-invalid {
+    @apply border-red-600;
+  }
+
+  &:focus {
+    @apply outline-none bg-white border-gray-400;
+  }
+  &[disabled], &:disabled, &.disabled{
+    @apply border-gray-300 bg-gray-100 text-gray-500;
+  }
+}
+
+input::placeholder {
+@apply text-gray-500 !important;
+}
+
+select.input {
+@apply h-10;
+}
+
+.input-invalid {
+@apply text-red-600 font-medium mt-1 inline-block text-sm;
+}
+
+.list-check{
+  li{
+    @apply mr-16 pb-2;
+  }
+}
+
+.comment {
+  &[placeholder]:empty:before {
+    cursor: text;
+    content: attr(placeholder);
+  }
+
+  &[placeholder]:empty:focus:before {
+    content: "";
+  }
+}
+
+.textarea {
+  @apply h-32;
+}
+

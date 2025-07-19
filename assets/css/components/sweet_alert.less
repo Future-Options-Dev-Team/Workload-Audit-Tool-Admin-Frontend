@@ -1,0 +1,30 @@
+.swal2-popup{
+  width: auto !important;
+}
+.swal2-title{
+  @apply mb-0 text-gray-700 text-2xl !important;
+}
+.swal2-content{
+  @apply text-gray-500 text-base !important;
+}
+.swal2-actions{
+  @apply mt-6 !important;
+}
+
+.swal2-modal{
+  @apply p-8 !important;
+}
+.swal2-content .swal2-input{
+  @apply border-2 border-gray-400 w-full p-3 rounded mt-2 bg-gray-100;
+
+  &.is-invalid {
+  @apply border-red-600;
+  }
+
+  &:focus {
+  @apply outline-none bg-white border-gray-400;
+  }
+  &:disabled{
+  @apply border-gray-300 bg-gray-200 text-gray-500;
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  @apply font-sans bg-gray-200;
+}
+
+a {
+@apply no-underline text-blue;
+
+  &:hover {
+    @apply text-blue-700;
+  }
+}
+
+[v-cloak] {
+@apply hidden;
+  transition: all 0.5s;
+}
+
+.content{
+  @apply mx-auto pl-8 py-4;
+}
+
+.container{
+  min-width: 1024px;
+}
+
+.vs__dropdown-toggle{
+  border: none;
+}
